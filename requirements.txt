@@ -1,8 +1,6 @@
 argparse
 transformers
-huggingface_hub
 torch
-accelerate
-evaluate
-datasets
-tira
+
+
+
