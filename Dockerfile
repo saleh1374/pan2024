@@ -5,6 +5,6 @@ ADD requirements.txt /requirements.txt
 
 RUN pip3 install -r /requirements.txt
 
-CMD ["python", "main.py", "--input", "$inputDataset", "--output", "$outputDir"]
+ENTRYPOINT  ["python", "main.py", "--input", "$inputDataset", "--output", "$outputDir"]
 
 
