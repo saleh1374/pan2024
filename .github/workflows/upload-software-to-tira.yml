@@ -23,3 +23,5 @@ jobs:
         run: |
           docker build -t registry.webis.de/code-research/tira/tira-user-karami-sh/github-action-submission:0.0.1 -f ${{ github.workspace }}/Dockerfile ${{ github.workspace }}
           tira-run --tira-client-token ${{ secrets.TIRA_CLIENT_TOKEN }} --input-dataset multi-author-writing-style-analysis-2024/multi-author-spot-check-20240428-training --image registry.webis.de/code-research/tira/tira-user-karami-sh/github-action-submission:0.0.1
+          python3 /script.py --input $inputDataset --output $outputDir
+
