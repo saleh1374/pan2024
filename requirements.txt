@@ -5,3 +5,4 @@ torch
 accelerate
 evaluate
 datasets
+tira
