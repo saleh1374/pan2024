@@ -22,4 +22,4 @@ jobs:
       - name: Build, test, and upload image
         run: |
           docker build -t registry.webis.de/code-research/tira/tira-user-karami-sh/github-action-submission:0.0.1 -f ${{ github.workspace }}/Dockerfile ${{ github.workspace }}
-          tira-run --tira-client-token ${{ secrets.TIRA_CLIENT_TOKEN }} --input-dataset multi-author-writing-style-analysis-2024/multi-author-spot-check-20240428-training --image registry.webis.de/code-research/tira/tira-user-karami-sh/github-action-submission:0.0.1 --push true --fail-if-output-is-empty
+          tira-run --input-dataset multi-author-writing-style-analysis-2024/multi-author-spot-check-20240428-training --image registry.webis.de/code-research/tira/tira-user-karami-sh/github-action-submission:0.0.1
