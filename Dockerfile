@@ -5,5 +5,6 @@ ADD requirements.txt /requirements.txt
 
 RUN pip3 install -r /requirements.txt
 
-ENTRYPOINT [ "python3", "/script.py", "-i", "$inputDataset", "-o", "$outputDir" ]
+CMD ["python", "script.py"]
+
 
